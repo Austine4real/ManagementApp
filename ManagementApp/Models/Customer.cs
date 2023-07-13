@@ -6,13 +6,7 @@ namespace ManagementApp.Models
 {
 	public class Customer
 	{
-		//[ScaffoldColumn(false)]
-		//public Guid Id { get; set; }
-		//      public string FirstName { get; set; }
-		//      public string LastName { get; set; }
-		//      public string Email { get; set; }
-		//[ScaffoldColumn(false)]
-		//public List<Order> Orders { get; set; }
+		
 		[ScaffoldColumn(false)]
 		public Guid Id { get; set; }
 		[Required(ErrorMessage = "FirstName is required")]
