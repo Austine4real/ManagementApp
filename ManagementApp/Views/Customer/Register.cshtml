@@ -9,43 +9,49 @@
 
 		<div class="row">
 			<div class="col-md-8 offset-2 ">
-				<form asp-action="Register" method="post">
-					<h4>Sign up for a new account</h4>
-					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="card">
 
-					<div class="form-group mb-1">
-						<label asp-for="FirstName" class="control-label"></label>
-						<input asp-for="FirstName" class="form-control" />
-						<span asp-validation-for="FirstName" class="text-danger"></span>
-					</div>
-					<div class="form-group mb-1">
-						<label asp-for="LastName" class="control-label"></label>
-						<input asp-for="LastName" class="form-control" />
-						<span asp-validation-for="LastName" class="text-danger"></span>
-					</div>
+				<div class="card-body">
+						<form asp-action="Register" method="post">
+							<h4>Sign up for a new account</h4>
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-					<div class="form-group mb-1">
-						<label asp-for="EmailAddress" class="control-label"></label>
-						<input asp-for="EmailAddress" class="form-control" />
-						<span asp-validation-for="EmailAddress" class="text-danger"></span>
-					</div>
-					<div class="form-group mb-1">
-						<label asp-for="Password" class="control-label"></label>
-						<input asp-for="Password" class="form-control" />
-						<span asp-validation-for="Password" class="text-danger"></span>
-					</div>
-					<div class="form-group mb-2">
-						<label asp-for="ConfirmPassword" class="control-label"></label>
-						<input asp-for="ConfirmPassword" class="form-control" />
-						<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-					</div>
+							<div class="form-group mb-1">
+								<label asp-for="FirstName" class="control-label"></label>
+								<input asp-for="FirstName" class="form-control" />
+								<span asp-validation-for="FirstName" class="text-danger"></span>
+							</div>
+							<div class="form-group mb-1">
+								<label asp-for="LastName" class="control-label"></label>
+								<input asp-for="LastName" class="form-control" />
+								<span asp-validation-for="LastName" class="text-danger"></span>
+							</div>
 
-					<div class="form-group">
-						<input class="w-100 btn btn-outline-primary float-right" type="submit" value="Sign up" />
-						<p>Already have an account?   <a class="text-decoration-none text-primary" asp-controller="Customer" asp-action="Login">Login</a></p>
-					</div>
+							<div class="form-group mb-1">
+								<label asp-for="EmailAddress" class="control-label"></label>
+								<input asp-for="EmailAddress" class="form-control" />
+								<span asp-validation-for="EmailAddress" class="text-danger"></span>
+							</div>
+							<div class="form-group mb-1">
+								<label asp-for="Password" class="control-label"></label>
+								<input asp-for="Password" class="form-control" />
+								<span asp-validation-for="Password" class="text-danger"></span>
+							</div>
+							<div class="form-group mb-2">
+								<label asp-for="ConfirmPassword" class="control-label"></label>
+								<input asp-for="ConfirmPassword" class="form-control" />
+								<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+							</div>
 
-				</form>
+							<div class="form-group">
+								<input class="w-100 btn btn-outline-primary float-right" type="submit" value="Sign up" />
+								<p>Already have an account?   <a class="text-decoration-none text-primary" asp-controller="Customer" asp-action="Login">Login</a></p>
+							</div>
+
+						</form>
+				</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
